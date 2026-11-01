@@ -3,30 +3,104 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GLORGLAP</title>
-<meta name="description" content="GLORGLAP: Fortnite, Call of Duty and Valorant gameplay, clips and highlights.">
-<style>
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #0e1014; color: #f2f2f2; }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; text-align: center; }
-  img { width: 100%; max-width: 560px; height: auto; }
-  h1 { font-size: 1.6rem; margin: 24px 0 4px; }
-  p { line-height: 1.6; }
-  a { color: #00be64; }
-  footer { margin-top: 48px; font-size: 0.9rem; color: #9aa0a6; }
-</style>
+<title>GLORGLAP: Gameplay, Clips and Highlights</title>
+<meta name="description" content="GLORGLAP: Fortnite, Call of Duty and Valorant gameplay, clips and highlights on YouTube, Instagram and TikTok.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta property="og:image" content="https://drougebusiness-source.github.io/glorglap/app-icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header><div class="bar">
+  <a class="brand" href="index.html"><img src="icon-180.png" alt="">GLORGLAP</a>
+  <nav>
+    <a href="#games">Games</a>
+    <a href="#watch">Watch</a>
+    <a href="#uploader">Uploader</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
 <main>
-  <img src="logo.png" alt="GLORGLAP logo with TikTok, YouTube, Instagram and Twitch icons">
-  <h1>GLORGLAP</h1>
-  <p><strong>Fortnite, Call of Duty and Valorant: gameplay, clips and highlights.</strong></p>
-  <p>Watch on <a href="https://www.youtube.com/@glorglap">YouTube</a>,
-     <a href="https://www.instagram.com/glorglap/">Instagram</a> and
-     <a href="https://www.tiktok.com/@glorglap">TikTok</a>.</p>
-  <p>GLORGLAP Uploader is the channel's private tool for posting its own gameplay videos and
-     clips to its own accounts. It is not offered to anyone else.</p>
-  <p>Contact: <a href="mailto:drouge.business@gmail.com">drouge.business@gmail.com</a></p>
-  <footer><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></footer>
+  <div class="hero">
+    <img src="app-icon.png" alt="GLORGLAP icon">
+    <div>
+      <h1>Gameplay, clips and highlights</h1>
+      <p class="lead">GLORGLAP plays Fortnite, Call of Duty and Valorant and turns every session into a
+        full gameplay video plus short vertical clips of the best moments.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://www.youtube.com/@glorglap">Watch on YouTube</a>
+        <a class="btn" href="https://www.tiktok.com/@glorglap">TikTok</a>
+        <a class="btn" href="https://www.instagram.com/glorglap/">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="games">
+    <h2>What we play</h2>
+    <div class="grid">
+      <div class="card"><h3>Fortnite</h3><p>Battle royale matches, clutch endings and build fights.</p></div>
+      <div class="card"><h3>Call of Duty</h3><p>Multiplayer and Warzone runs, streaks and the plays that went sideways.</p></div>
+      <div class="card"><h3>Valorant</h3><p>Ranked rounds, aces and close retakes.</p></div>
+    </div>
+  </section>
+
+  <section id="watch">
+    <h2>Where to watch</h2>
+    <table>
+      <tr><th>Platform</th><th>What goes there</th></tr>
+      <tr><td><a href="https://www.youtube.com/@glorglap">YouTube</a></td><td>Full gameplay videos and Shorts</td></tr>
+      <tr><td><a href="https://www.tiktok.com/@glorglap">TikTok</a></td><td>Vertical highlight clips with captions</td></tr>
+      <tr><td><a href="https://www.instagram.com/glorglap/">Instagram</a></td><td>The same highlight clips as Reels</td></tr>
+    </table>
+  </section>
+
+  <section id="uploader">
+    <h2>GLORGLAP Uploader</h2>
+    <p>GLORGLAP Uploader is the channel's own publishing tool. It runs on the creator's computer and
+      posts the channel's own videos to the channel's own accounts. Nothing is posted until the
+      creator approves it.</p>
+    <ol class="steps">
+      <li><strong>Record.</strong> A gameplay session is recorded on the creator's PC.</li>
+      <li><strong>Cut.</strong> The tool finds the loudest, busiest moments and cuts them into short
+        vertical clips with captions, plus one full-length video.</li>
+      <li><strong>Review.</strong> The creator watches each clip and approves or rejects it.</li>
+      <li><strong>Publish.</strong> Approved clips are uploaded with their title and caption: to
+        TikTok through TikTok's Login Kit and Content Posting API, to YouTube through the YouTube
+        Data API, and to Instagram through Meta's Graph API.</li>
+    </ol>
+    <div class="grid">
+      <div class="card"><h3>Own content only</h3><p>Only the channel's own gameplay is uploaded, to accounts the creator owns.</p></div>
+      <div class="card"><h3>Minimal permissions</h3><p>On TikTok it uses <code>user.info.basic</code>, <code>video.upload</code> and <code>video.publish</code>, and nothing else.</p></div>
+      <div class="card"><h3>No viewer data</h3><p>It never reads followers, comments, messages or anyone else's data.</p></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <details><summary>How often are new clips posted?</summary>
+      <p>Whenever there's a new gameplay session, usually several times a week.</p></details>
+    <details><summary>Can I use GLORGLAP Uploader for my own channel?</summary>
+      <p>No. It's a private tool for the GLORGLAP channel, and it isn't offered to the public.</p></details>
+    <details><summary>Does the uploader collect any data about viewers?</summary>
+      <p>No. See the <a href="privacy.html">privacy policy</a> for exactly what it uses.</p></details>
+    <details><summary>How do I disconnect the app from a TikTok account?</summary>
+      <p>In TikTok, go to Settings and privacy, then Security, then Manage app permissions, and remove GLORGLAP Uploader.</p></details>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For business, collabs and questions about the uploader, email
+      <a href="mailto:drouge.business@gmail.com">drouge.business@gmail.com</a>.</p>
+  </section>
 </main>
+
+<footer><div class="bar">
+  <span>© 2026 GLORGLAP</span>
+  <nav><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a><a href="#contact">Contact</a></nav>
+</div></footer>
 </body>
 </html>
